@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Zlele</string>
+    <string name="happyday">좋은 하루 되세요!</string>
+    <string name="attend">출결 현황</string>
+    <string name="score">이수 학점</string>
+    <string name="info">러러</string>
+    <string name="action_Attend">출결 정보</string>
+    <string name="action_Score">이수 학점</string>
+    <string name="action_Info">My Page</string>
+</resources>
