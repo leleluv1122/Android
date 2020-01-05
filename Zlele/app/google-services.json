@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "611156014469",
+    "firebase_url": "https://zlele-ef15e.firebaseio.com",
+    "project_id": "zlele-ef15e",
+    "storage_bucket": "zlele-ef15e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611156014469:android:16a5b49cda60abbc4040ec",
+        "android_client_info": {
+          "package_name": "com.example.zlele"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611156014469-lugqhlsv6eubhcbrfqk1lkm26ncrmr48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4j-GGrWSYGvMmDaEBTnRmwBX-cObmnow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611156014469-lugqhlsv6eubhcbrfqk1lkm26ncrmr48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

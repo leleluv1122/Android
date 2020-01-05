@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.zlele">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,9 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".InfoActivity" android:label="@string/action_Info"></activity>
-        <activity android:name=".ScoreActivity" android:label="@string/action_Score"/>
-        <activity android:name=".AttendActivity" android:label="@string/action_Attend" />
+        <activity android:name=".WeatherActivity"></activity>
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/action_Info" />
+        <activity
+            android:name=".ScoreActivity"
+            android:label="@string/action_Score" />
+        <activity
+            android:name=".AttendActivity"
+            android:label="@string/action_Attend" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
