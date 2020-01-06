@@ -11,8 +11,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".WeatherActivity"></activity>
+        android:theme="@style/AppTheme">
+        <activity android:name=".TeacherInfoActivity"></activity>
         <activity
             android:name=".InfoActivity"
             android:label="@string/action_Info" />

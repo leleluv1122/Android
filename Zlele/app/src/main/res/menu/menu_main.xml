@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_info"
+        android:title="@string/action_Info" app:showAsAction="always" />
+    <item android:id="@+id/action_attend"
+        android:title="@string/action_Attend" app:showAsAction="never" />
+    <item android:id="@+id/action_score"
+        android:title="@string/action_Score" app:showAsAction="never" />
+    <item android:id="@+id/action_teacher_info"
+        android:title="@string/action_Teacher_Info" app:showAsAction="never" />
+</menu>
