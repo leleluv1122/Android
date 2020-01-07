@@ -8,4 +8,8 @@
     <string name="action_Score">이수 학점</string>
     <string name="action_Info">My Page</string>
     <string name="action_Teacher_Info">교수 정보</string>
+    <string name="pro_name">Chenle</string>
+    <string name="pro_major">Cute</string>
+    <string name="pro_email">-</string>
+    <string name="pro_office">NCT_DREAM</string>
 </resources>

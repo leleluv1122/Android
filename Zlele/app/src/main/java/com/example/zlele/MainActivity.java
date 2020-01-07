@@ -56,17 +56,21 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_info) {
-            Toast.makeText(this, "My page Gogogo", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, InfoActivity.class);
+            startActivity(intent);
             return true;
         } else if (id == R.id.action_attend) {
-            Toast.makeText(this, "출결정보 gogogo", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, AttendActivity.class);
+            startActivity(intent);
             return true;
         } else if (id == R.id.action_score) {
-            Toast.makeText(this, "이수학점고고공", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, ScoreActivity.class);
+            startActivity(intent);
             return true;
         }
         else if (id == R.id.action_teacher_info) {
-            Toast.makeText(this, "교수정보 ㄱㄱ", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, TeacherInfoActivity.class);
+            startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(item);

@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class TeacherInfoActivity extends AppCompatActivity {
+public class TeacherInfoActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView nameview;
     TextView majorview;
@@ -30,8 +30,8 @@ public class TeacherInfoActivity extends AppCompatActivity {
         beforebtn = (ImageButton) findViewById(R.id.btn_before);
         nextbtn = (ImageButton) findViewById(R.id.btn_next);
 
-        beforebtn.setOnClickListener((View.OnClickListener) this);
-        nextbtn.setOnClickListener((View.OnClickListener) this);
+        beforebtn.setOnClickListener(this);
+        nextbtn.setOnClickListener(this);
     }
 
     public void onClick(View v){
@@ -44,9 +44,9 @@ public class TeacherInfoActivity extends AppCompatActivity {
     }
 
     private void beforeFunc(){
-
+        //뭔가를 해야되는데..
     }
     private void nextFunc(){
-
+        //모르겠당ㅋㅎㅋㅎ
     }
 }

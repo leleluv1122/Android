@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@mipmap/ic_face_black_48dp"/>
+        android:src="@mipmap/lele"/>
 
     <TextView
         android:id="@+id/pro_title"
@@ -36,6 +36,7 @@
             android:textStyle="bold" />
         <TextView
             android:id="@+id/pro_name"
+            android:text="@string/pro_name"
             android:paddingLeft="5dp"
             android:paddingTop="5dp"
             android:paddingRight="5dp"
@@ -62,6 +63,7 @@
             android:textStyle="bold" />
         <TextView
             android:id="@+id/pro_major"
+            android:text="@string/pro_major"
             android:paddingLeft="5dp"
             android:paddingTop="5dp"
             android:paddingRight="5dp"
@@ -89,6 +91,7 @@
             android:textStyle="bold" />
         <TextView
             android:id="@+id/pro_office"
+            android:text="@string/pro_office"
             android:paddingLeft="5dp"
             android:paddingTop="5dp"
             android:paddingRight="5dp"
@@ -116,6 +119,7 @@
             android:textStyle="bold" />
         <TextView
             android:id="@+id/pro_email"
+            android:text="@string/pro_email"
             android:paddingLeft="5dp"
             android:paddingTop="5dp"
             android:paddingRight="5dp"
@@ -125,16 +129,22 @@
             android:layout_weight="3" />
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/btn_before"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_navigate_before_black_48dp" />
+        android:paddingLeft="130dp"
+        android:paddingRight="130dp">
 
-    <ImageButton
-        android:id="@+id/btn_next"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_navigate_next_black_48dp" />
+        <ImageButton
+            android:id="@+id/btn_before"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_navigate_before_black_48dp" />
 
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_navigate_next_black_48dp" />
+    </LinearLayout>
 </LinearLayout>
