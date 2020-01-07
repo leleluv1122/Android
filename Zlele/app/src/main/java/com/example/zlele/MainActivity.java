@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
                 } else if(buttonId == R.id.btn_Info){
                     Intent intent = new Intent(getApplicationContext(), InfoActivity.class);
                     startActivity(intent);
+                }  else if(buttonId == R.id.btn_menu){
+                    Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+                    startActivity(intent);
                 }
 
             }
@@ -41,39 +44,47 @@ public class MainActivity extends AppCompatActivity {
         Button attend = (Button)findViewById(R.id.btn_Attend);
         Button score = (Button)findViewById(R.id.btn_Score);
         Button info = (Button)findViewById(R.id.btn_Info);
+        ImageButton menu = (ImageButton) findViewById(R.id.btn_menu);
+
         attend.setOnClickListener(listener);
         score.setOnClickListener(listener);
         info.setOnClickListener(listener);
+        menu.setOnClickListener(listener);
 
-    }
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_info) {
-            Intent intent = new Intent(this, InfoActivity.class);
-            startActivity(intent);
-            return true;
-        } else if (id == R.id.action_attend) {
-            Intent intent = new Intent(this, AttendActivity.class);
-            startActivity(intent);
-            return true;
-        } else if (id == R.id.action_score) {
-            Intent intent = new Intent(this, ScoreActivity.class);
-            startActivity(intent);
-            return true;
-        }
-        else if (id == R.id.action_teacher_info) {
-            Intent intent = new Intent(this, TeacherInfoActivity.class);
-            startActivity(intent);
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
 }
+
+
+    //    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return true;
+//    }
+
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        int id = item.getItemId();
+//        if (id == R.id.action_info) {
+//            Intent intent = new Intent(this, InfoActivity.class);
+//            startActivity(intent);
+//            return true;
+//        } else if (id == R.id.action_attend) {
+//            Intent intent = new Intent(this, AttendActivity.class);
+//            startActivity(intent);
+//            return true;
+//        } else if (id == R.id.action_score) {
+//            Intent intent = new Intent(this, ScoreActivity.class);
+//            startActivity(intent);
+//            return true;
+//        } else if (id == R.id.action_teacher_info) {
+//            Intent intent = new Intent(this, TeacherInfoActivity.class);
+//            startActivity(intent);
+//            return true;
+//        }  else if (id == R.id.action_teacher_info) {
+//            Intent intent = new Intent(this, TeacherInfoActivity.class);
+//            startActivity(intent);
+//            return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
+
