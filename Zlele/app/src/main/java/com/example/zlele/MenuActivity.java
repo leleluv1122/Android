@@ -23,11 +23,16 @@ public class MenuActivity extends AppCompatActivity {
                 if (buttonId == R.id.btn_proinfo) {
                     Intent intent = new Intent(getApplicationContext(), TeacherInfoActivity.class);
                     startActivity(intent);
+                } else if (buttonId == R.id.btn_borad) {
+                    Intent intent = new Intent(getApplicationContext(), BoardActivity.class);
+                    startActivity(intent);
                 }
             }
         };
         Button info = (Button)findViewById(R.id.btn_proinfo);
+        Button board = (Button)findViewById(R.id.btn_borad);
 
         info.setOnClickListener(listener);
+        board.setOnClickListener(listener);
     }
 }

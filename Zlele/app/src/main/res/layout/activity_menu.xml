@@ -51,10 +51,37 @@
             <Button
                 android:id="@+id/btn_proinfo"
                 android:layout_width="match_parent"
+                android:fontFamily="@font/poor"
                 android:layout_height="40dp"
                 android:background="#FFFFFF"
-                android:paddingRight="320dp"
+                android:paddingRight="329dp"
                 android:text="교수정보" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/board"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:fontFamily="@font/poor"
+                android:paddingLeft="8dp"
+                android:text="Board"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn_borad"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/poor"
+                android:background="#FFFFFF"
+                android:paddingRight="320dp"
+                android:text="한줄게시판" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
