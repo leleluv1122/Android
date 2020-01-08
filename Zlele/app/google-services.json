@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "611156014469-6sqatkhdch7n9lgco956gep65j59h29p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zlele",
+            "certificate_hash": "efd4eb2096b4b85928808f4998fd443072951eef"
+          }
+        },
+        {
           "client_id": "611156014469-lugqhlsv6eubhcbrfqk1lkm26ncrmr48.apps.googleusercontent.com",
           "client_type": 3
         }
