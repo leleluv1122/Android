@@ -1,18 +1,21 @@
 package com.example.http;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import org.json.JSONObject;
 
 import java.util.HashMap;
-
+/**
+ * Created by kkang
+ * 깡샘의 안드로이드 프로그래밍 - 루비페이퍼
+ * 위의 교제에 담겨져 있는 코드로 설명 및 활용 방법은 교제를 확인해 주세요.
+ */
 public class MainActivity extends AppCompatActivity {
-
     TextView titleView;
     TextView dateView;
     TextView contentView;
@@ -32,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         map.put("name","kkang");
 
         HttpRequester httpRequester=new HttpRequester();
-        httpRequester.request("http://192.168.43.24:8000/files/test.json", map, httpCallback);
-
+        httpRequester.request("http://70.12.205.94:8000/files/test.json", map, httpCallback);
+        
 
     }
 
@@ -50,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 String imageFile=root.getString("file");
                 if(imageFile!=null && !imageFile.equals("")){
                     HttpImageRequester imageRequester=new HttpImageRequester();
-                    imageRequester.request("http://192.168.43.24:8000/files/"+imageFile, null, imageCallback);
+                    imageRequester.request("http://70.12.205.94:8000/files/"+imageFile, null, imageCallback);
                 }
             }catch (Exception e){
                 e.printStackTrace();
